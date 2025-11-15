@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pixel Platformer 100 Levels</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Cairo:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Main Menu -->
+<div id="main-menu">
+  <h1>Pixel Platformer</h1>
+  <button id="start-game">Start Game</button>
+  <button id="select-level">Select Level</button>
+  <button id="toggle-music">Toggle Music</button>
+  <p id="achievements">Last Level: <span id="last-level">1</span>, Score: <span id="last-score">0</span></p>
+</div>
+
+<!-- Game -->
+<main id="game-container" class="hidden">
+  <canvas id="game" width="960" height="540"></canvas>
+  
+  <!-- HUD -->
+  <div id="hud">
+    <div>Score: <span id="score-val">0</span></div>
+    <div>Lives: <span id="lives-val">3</span></div>
+    <div>Coins: <span id="coins-val">0</span></div>
+    <div>Level: <span id="level-num">1</span></div>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="hidden">
+    <div id="overlay-card">
+      <h2 id="overlay-title">Game Over</h2>
+      <p>Your Score: <span id="final-score">0</span></p>
+      <button id="btn-restart">Restart</button>
+      <button id="btn-back-menu">Main Menu</button>
+    </div>
+  </div>
+
+  <!-- Level select -->
+  <div id="level-select" class="hidden">
+    <div id="level-list">
+      <h3>Select Level (1 - 100)</h3>
+      <input id="level-input" type="number" min="1" max="100" value="1">
+      <button id="go-level">Go</button>
+      <button id="close-select">Close</button>
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

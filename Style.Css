@@ -1,0 +1,25 @@
+:root { --accent: #ffcc00; }
+*{box-sizing:border-box;}
+body{margin:0;font-family:Cairo,Arial,sans-serif;background:#071228;color:#fff;display:flex;flex-direction:column;min-height:100vh;}
+canvas{border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.6);}
+.hidden{display:none;}
+
+/* Main Menu */
+#main-menu{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;text-align:center;gap:12px;}
+#main-menu button{padding:12px 24px;border:none;border-radius:8px;background:var(--accent);color:#000;font-weight:bold;cursor:pointer;}
+#main-menu h1{font-family:'Press Start 2P',monospace;margin-bottom:16px;}
+
+/* Game HUD */
+#hud{position:absolute;top:12px;left:12px;display:flex;gap:12px;background:rgba(0,0,0,0.6);padding:8px 12px;border-radius:8px;}
+
+/* Overlay */
+#overlay{position:absolute;inset:0;background:rgba(0,0,0,0.7);display:flex;align-items:center;justify-content:center;}
+#overlay-card{background:linear-gradient(180deg,#1b3a57,#10304a);padding:22px;border-radius:12px;text-align:center;min-width:300px;}
+#overlay-card h2{margin:0 0 8px 0;font-family:'Press Start 2P',monospace;}
+#overlay-card button{margin-top:12px;padding:8px 14px;border-radius:8px;border:0;background:var(--accent);cursor:pointer;font-weight:700;}
+
+/* Level select */
+#level-select{position:absolute;inset:0;background:rgba(0,0,0,0.6);display:flex;align-items:center;justify-content:center;}
+#level-list{background:#12324a;padding:18px;border-radius:10px;text-align:center;}
+#level-list input{padding:8px;width:80px;margin-top:6px;}
+#level-list button{margin:6px;padding:8px 10px;}
